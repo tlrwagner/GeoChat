@@ -27,16 +27,17 @@ def query(query, isUpdate=False):
 
 #return returnResults
 
-@app.route('/')
-def index():
+@app.route('/allentrys', methods=["POST", "GET"])
+def entries():
 	returnResults = ""
 	results = query("select * from entry")
-	for result in results:
-		returnResults += "<p>" + str(result[0]) + ", " + str(result[1])  + ", " + str(result[2]) + "</p>"
+	return jsonify(results)
 
-	return returnResults[0][1]
-
-
+@app.route('/allgroups', methods=["POST", "GET"])
+def groups():
+	returnResults = ""
+	results = query("select * from group")
+	return jsonify(results)
 
 @app.route('/test', methods=['POST'])
 def test():
