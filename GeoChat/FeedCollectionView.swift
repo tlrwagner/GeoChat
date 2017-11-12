@@ -10,11 +10,12 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class FeedCollectionView: UICollectionViewController {
+class FeedCollectionView: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    var posts = [Post]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,11 +23,37 @@ class FeedCollectionView: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        
+        
+        GeoModel.getUser(userID: 3){
+            response in
+            self.posts = response
+            self.collectionView?.reloadData()
+        }
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil)
+        
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "test", style: .plain, target: self, action: #selector(reload))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+            GeoModel.getUser(userID: 3){
+                response in
+                self.posts = response
+                self.collectionView?.reloadData()
+            }
+        }
+        else{
+            GeoModel.getAll(){
+                response in
+                self.posts = response
+                self.collectionView?.reloadData()
+            }
+        }
+    }
+    
+    func reload(){
+        self.collectionView?.reloadData()
     }
 
     /*
@@ -43,21 +70,30 @@ class FeedCollectionView: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        print(posts.count)
+        return posts.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "feedCell", for: indexPath) as! FeedCollectionCell
+        cell.textLabel.text = posts[indexPath.row].entry_text
+        cell.userLabel.text = posts[indexPath.row].username
+        print(indexPath.row)
+        print(posts[indexPath.row].entry_text)
     
         // Configure the cell
     
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.view.frame.width-20, height:120)
     }
 
     // MARK: UICollectionViewDelegate

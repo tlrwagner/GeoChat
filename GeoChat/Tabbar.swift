@@ -12,13 +12,24 @@ class Tabbar: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBar.tintColor = UIColor.white
+        self.tabBar.barTintColor = UIColor.init(red: 0, green: 122/255, blue: 255/255, alpha: 1)
         // Do any additional setup after loading the view.
+        setStyle()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setStyle(){
+        for tab in tabBar.items! as [UITabBarItem]{
+            if tab.title == "Feed"{
+                tab.image = UIImage.fontAwesomeIcon(name: .commentsO, textColor: UIColor.white, size: CGSize(width: 30, height: 30))
+            }
+            else if tab.title == "Groups"{
+                tab.image = UIImage.fontAwesomeIcon(name: .users, textColor: UIColor.white, size: CGSize(width: 30, height: 30))
+            }
+            else{
+                tab.image = UIImage.fontAwesomeIcon(name: .user, textColor: UIColor.white, size: CGSize(width: 30, height: 30))
+            }
+        }
     }
     
 

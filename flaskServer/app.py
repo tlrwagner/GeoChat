@@ -1,10 +1,8 @@
 import MySQLdb
 from flask import Flask
 from flask import jsonify
-import json
-from flask import request
-
 app = Flask(__name__)
+app.debug = True
 
 def query(query, isUpdate=False):
 	db = MySQLdb.connect(host="hackitaldb.ce1doaue7cqd.us-east-1.rds.amazonaws.com", user="hackathon", passwd="thetatau", db="innodb")
@@ -39,15 +37,15 @@ def createEntry():
 @app.route('/allentrys', methods=["POST", "GET"])
 def entries():
 	returnResults = []
-	results = query("select u.user_name, e.entry_text from entry e left join user u on (e.created_user = u.user_id)")
-	for result in results:
-		returnResults.append((result[0], result[1]))
+	results = query("select * from entry")
+    for result in results:
+    	returnResults.append(Entry('tyler', result[1]));
 
-	return jsonify({"results": returnResults})
+	return jsonify(returnResults)
 
 @app.route('/allgroups', methods=["POST", "GET"])
 def groups():
-	returnResults = []
+	returnResults = ""
 	results = query("select * from group")
 	for result in results:
 		returnResults.append((result[0], result[1], result[2]))
@@ -84,6 +82,11 @@ def feedByGroup():
 
 	return jsonify({"results": returnResults})
 
-@app.route('/test', methods=['POST'])
+@app.route('/test', methods=['POST', 'GET'])
 def test():
 	return jsonify("TYLER RULEZ")
+
+class Entry:
+    def __init__(self, user, entry_text):
+        self.user = user
+        self.entry_text = entry_text

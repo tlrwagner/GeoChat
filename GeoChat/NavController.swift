@@ -14,11 +14,8 @@ class NavController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.navigationBar.barTintColor = UIColor.init(red: 0, green: 122/255, blue: 255/255, alpha: 1)
+        self.navigationBar.tintColor = UIColor.white
     }
     
 
