@@ -29,9 +29,12 @@ def query(query, isUpdate=False):
 
 @app.route('/allentrys', methods=["POST", "GET"])
 def entries():
-	returnResults = ""
+	returnResults = []
 	results = query("select * from entry")
-	return jsonify(results)
+    for result in results:
+    	returnResults.append(Entry('tyler', result[1]));
+
+	return jsonify(returnResults)
 
 @app.route('/allgroups', methods=["POST", "GET"])
 def groups():
@@ -39,6 +42,11 @@ def groups():
 	results = query("select * from group")
 	return jsonify(results)
 
-@app.route('/test', methods=['POST'])
+@app.route('/test', methods=['POST', 'GET'])
 def test():
 	return jsonify("TYLER RULEZ")
+
+class Entry:
+    def __init__(self, user, entry_text):
+        self.user = user
+        self.entry_text = entry_text

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03570E631FB7B8BF006F2B15 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E621FB7B8BF006F2B15 /* Tabbar.swift */; };
+		03570E651FB7BA3D006F2B15 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E641FB7BA3D006F2B15 /* NavController.swift */; };
+		03570E671FB7C716006F2B15 /* FeedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E661FB7C716006F2B15 /* FeedCollectionCell.swift */; };
+		03570E691FB7C7C8006F2B15 /* FeedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E681FB7C7C8006F2B15 /* FeedCollectionView.swift */; };
+		03570E6B1FB7F886006F2B15 /* GeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E6A1FB7F886006F2B15 /* GeoModel.swift */; };
+		03570E6D1FB81286006F2B15 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E6C1FB81286006F2B15 /* Post.swift */; };
+		03570E6F1FB82DDD006F2B15 /* GroupTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E6E1FB82DDD006F2B15 /* GroupTable.swift */; };
+		03570E711FB82E38006F2B15 /* GroupTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03570E701FB82E38006F2B15 /* GroupTableCell.swift */; };
 		03FD751D1FB7A30D00FC3E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD751C1FB7A30D00FC3E55 /* AppDelegate.swift */; };
 		03FD751F1FB7A30D00FC3E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD751E1FB7A30D00FC3E55 /* ViewController.swift */; };
 		03FD75221FB7A30D00FC3E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FD75201FB7A30D00FC3E55 /* Main.storyboard */; };
@@ -14,6 +22,12 @@
 		03FD75271FB7A30D00FC3E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FD75251FB7A30D00FC3E55 /* LaunchScreen.storyboard */; };
 		03FD75321FB7A30D00FC3E55 /* GeoChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD75311FB7A30D00FC3E55 /* GeoChatTests.swift */; };
 		03FD753D1FB7A30D00FC3E55 /* GeoChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD753C1FB7A30D00FC3E55 /* GeoChatUITests.swift */; };
+		03FD754D1FB7A8BC00FC3E55 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 03FD754A1FB7A8BC00FC3E55 /* Podfile */; };
+		03FD754E1FB7A8BC00FC3E55 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 03FD754B1FB7A8BC00FC3E55 /* Podfile.lock */; };
+		03FD754F1FB7A8BC00FC3E55 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 03FD754C1FB7A8BC00FC3E55 /* Pods */; };
+		4B5A1F3989712AF11D5A9EDA /* Pods_GeoChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9820036D563F710726D4846 /* Pods_GeoChatUITests.framework */; };
+		972E2EFB5E955ACEABEBCC08 /* Pods_GeoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE328CA9FBBAC5B060D30F04 /* Pods_GeoChat.framework */; };
+		98C751FD734FB14F27B6BF3D /* Pods_GeoChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8B5BB8F08C687D7E1ABC60 /* Pods_GeoChatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03570E621FB7B8BF006F2B15 /* Tabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		03570E641FB7BA3D006F2B15 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		03570E661FB7C716006F2B15 /* FeedCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionCell.swift; sourceTree = "<group>"; };
+		03570E681FB7C7C8006F2B15 /* FeedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionView.swift; sourceTree = "<group>"; };
+		03570E6A1FB7F886006F2B15 /* GeoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoModel.swift; sourceTree = "<group>"; };
+		03570E6C1FB81286006F2B15 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		03570E6E1FB82DDD006F2B15 /* GroupTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTable.swift; sourceTree = "<group>"; };
+		03570E701FB82E38006F2B15 /* GroupTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableCell.swift; sourceTree = "<group>"; };
 		03FD75191FB7A30D00FC3E55 /* GeoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FD751C1FB7A30D00FC3E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03FD751E1FB7A30D00FC3E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +69,18 @@
 		03FD75381FB7A30D00FC3E55 /* GeoChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FD753C1FB7A30D00FC3E55 /* GeoChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoChatUITests.swift; sourceTree = "<group>"; };
 		03FD753E1FB7A30D00FC3E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FD754A1FB7A8BC00FC3E55 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		03FD754B1FB7A8BC00FC3E55 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
+		03FD754C1FB7A8BC00FC3E55 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
+		095A45BFA53A9933685269A8 /* Pods-GeoChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChatUITests/Pods-GeoChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B36CC3FB9177B29B35846BA /* Pods-GeoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7537EA3D3F686940FCCE7486 /* Pods-GeoChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChatTests/Pods-GeoChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79BEE2BB46C0E85907FA368C /* Pods-GeoChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChatTests/Pods-GeoChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9820036D563F710726D4846 /* Pods_GeoChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC878869DEB460ED58765450 /* Pods-GeoChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChatUITests/Pods-GeoChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB8B5BB8F08C687D7E1ABC60 /* Pods_GeoChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F1023AE8A009D66C0B2819 /* Pods-GeoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.release.xcconfig"; sourceTree = "<group>"; };
+		FE328CA9FBBAC5B060D30F04 /* Pods_GeoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972E2EFB5E955ACEABEBCC08 /* Pods_GeoChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C751FD734FB14F27B6BF3D /* Pods_GeoChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5A1F3989712AF11D5A9EDA /* Pods_GeoChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +118,8 @@
 				03FD75301FB7A30D00FC3E55 /* GeoChatTests */,
 				03FD753B1FB7A30D00FC3E55 /* GeoChatUITests */,
 				03FD751A1FB7A30D00FC3E55 /* Products */,
+				F119D59295D4F316BB0D7450 /* Pods */,
+				FE631E3A82543BA8A3761930 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +138,21 @@
 			children = (
 				03FD751C1FB7A30D00FC3E55 /* AppDelegate.swift */,
 				03FD751E1FB7A30D00FC3E55 /* ViewController.swift */,
+				03FD754A1FB7A8BC00FC3E55 /* Podfile */,
+				03FD754B1FB7A8BC00FC3E55 /* Podfile.lock */,
+				03FD754C1FB7A8BC00FC3E55 /* Pods */,
 				03FD75201FB7A30D00FC3E55 /* Main.storyboard */,
 				03FD75231FB7A30D00FC3E55 /* Assets.xcassets */,
 				03FD75251FB7A30D00FC3E55 /* LaunchScreen.storyboard */,
 				03FD75281FB7A30D00FC3E55 /* Info.plist */,
+				03570E621FB7B8BF006F2B15 /* Tabbar.swift */,
+				03570E641FB7BA3D006F2B15 /* NavController.swift */,
+				03570E661FB7C716006F2B15 /* FeedCollectionCell.swift */,
+				03570E681FB7C7C8006F2B15 /* FeedCollectionView.swift */,
+				03570E6A1FB7F886006F2B15 /* GeoModel.swift */,
+				03570E6C1FB81286006F2B15 /* Post.swift */,
+				03570E6E1FB82DDD006F2B15 /* GroupTable.swift */,
+				03570E701FB82E38006F2B15 /* GroupTableCell.swift */,
 			);
 			path = GeoChat;
 			sourceTree = "<group>";
@@ -125,6 +175,29 @@
 			path = GeoChatUITests;
 			sourceTree = "<group>";
 		};
+		F119D59295D4F316BB0D7450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B36CC3FB9177B29B35846BA /* Pods-GeoChat.debug.xcconfig */,
+				F5F1023AE8A009D66C0B2819 /* Pods-GeoChat.release.xcconfig */,
+				7537EA3D3F686940FCCE7486 /* Pods-GeoChatTests.debug.xcconfig */,
+				79BEE2BB46C0E85907FA368C /* Pods-GeoChatTests.release.xcconfig */,
+				CC878869DEB460ED58765450 /* Pods-GeoChatUITests.debug.xcconfig */,
+				095A45BFA53A9933685269A8 /* Pods-GeoChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE631E3A82543BA8A3761930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE328CA9FBBAC5B060D30F04 /* Pods_GeoChat.framework */,
+				EB8B5BB8F08C687D7E1ABC60 /* Pods_GeoChatTests.framework */,
+				A9820036D563F710726D4846 /* Pods_GeoChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FD75411FB7A30D00FC3E55 /* Build configuration list for PBXNativeTarget "GeoChat" */;
 			buildPhases = (
+				D0A17B06C25C9EB4700D3CC8 /* [CP] Check Pods Manifest.lock */,
 				03FD75151FB7A30D00FC3E55 /* Sources */,
 				03FD75161FB7A30D00FC3E55 /* Frameworks */,
 				03FD75171FB7A30D00FC3E55 /* Resources */,
+				06221AC2912426A026E83E82 /* [CP] Embed Pods Frameworks */,
+				5D8E8517F1CA39C9128816E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FD75441FB7A30D00FC3E55 /* Build configuration list for PBXNativeTarget "GeoChatTests" */;
 			buildPhases = (
+				74429C685B10F1C8DEFE5228 /* [CP] Check Pods Manifest.lock */,
 				03FD75291FB7A30D00FC3E55 /* Sources */,
 				03FD752A1FB7A30D00FC3E55 /* Frameworks */,
 				03FD752B1FB7A30D00FC3E55 /* Resources */,
+				8C12E03F9FECB6D94A8CC872 /* [CP] Embed Pods Frameworks */,
+				E68C35F754F1960809EB0DF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FD75471FB7A30D00FC3E55 /* Build configuration list for PBXNativeTarget "GeoChatUITests" */;
 			buildPhases = (
+				8D4BF716D470E6F472DD0D9D /* [CP] Check Pods Manifest.lock */,
 				03FD75341FB7A30D00FC3E55 /* Sources */,
 				03FD75351FB7A30D00FC3E55 /* Frameworks */,
 				03FD75361FB7A30D00FC3E55 /* Resources */,
+				B655864E631E58EFDD4EE6E4 /* [CP] Embed Pods Frameworks */,
+				DEB4596295F90AEF7CB58DA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +319,9 @@
 			files = (
 				03FD75271FB7A30D00FC3E55 /* LaunchScreen.storyboard in Resources */,
 				03FD75241FB7A30D00FC3E55 /* Assets.xcassets in Resources */,
+				03FD754F1FB7A8BC00FC3E55 /* Pods in Resources */,
+				03FD754E1FB7A8BC00FC3E55 /* Podfile.lock in Resources */,
+				03FD754D1FB7A8BC00FC3E55 /* Podfile in Resources */,
 				03FD75221FB7A30D00FC3E55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,13 +342,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06221AC2912426A026E83E82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D8E8517F1CA39C9128816E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74429C685B10F1C8DEFE5228 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C12E03F9FECB6D94A8CC872 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoChatTests/Pods-GeoChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4BF716D470E6F472DD0D9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B655864E631E58EFDD4EE6E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoChatUITests/Pods-GeoChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A17B06C25C9EB4700D3CC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB4596295F90AEF7CB58DA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoChatUITests/Pods-GeoChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E68C35F754F1960809EB0DF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoChatTests/Pods-GeoChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03FD75151FB7A30D00FC3E55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03570E6B1FB7F886006F2B15 /* GeoModel.swift in Sources */,
+				03570E631FB7B8BF006F2B15 /* Tabbar.swift in Sources */,
 				03FD751F1FB7A30D00FC3E55 /* ViewController.swift in Sources */,
+				03570E6D1FB81286006F2B15 /* Post.swift in Sources */,
+				03570E6F1FB82DDD006F2B15 /* GroupTable.swift in Sources */,
+				03570E671FB7C716006F2B15 /* FeedCollectionCell.swift in Sources */,
 				03FD751D1FB7A30D00FC3E55 /* AppDelegate.swift in Sources */,
+				03570E691FB7C7C8006F2B15 /* FeedCollectionView.swift in Sources */,
+				03570E711FB82E38006F2B15 /* GroupTableCell.swift in Sources */,
+				03570E651FB7BA3D006F2B15 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +644,7 @@
 		};
 		03FD75421FB7A30D00FC3E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B36CC3FB9177B29B35846BA /* Pods-GeoChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96YCEMN4BV;
@@ -426,6 +658,7 @@
 		};
 		03FD75431FB7A30D00FC3E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5F1023AE8A009D66C0B2819 /* Pods-GeoChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96YCEMN4BV;
@@ -439,6 +672,7 @@
 		};
 		03FD75451FB7A30D00FC3E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7537EA3D3F686940FCCE7486 /* Pods-GeoChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +688,7 @@
 		};
 		03FD75461FB7A30D00FC3E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BEE2BB46C0E85907FA368C /* Pods-GeoChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +704,7 @@
 		};
 		03FD75481FB7A30D00FC3E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC878869DEB460ED58765450 /* Pods-GeoChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 96YCEMN4BV;
@@ -483,6 +719,7 @@
 		};
 		03FD75491FB7A30D00FC3E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095A45BFA53A9933685269A8 /* Pods-GeoChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 96YCEMN4BV;
@@ -514,6 +751,7 @@
 				03FD75431FB7A30D00FC3E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03FD75441FB7A30D00FC3E55 /* Build configuration list for PBXNativeTarget "GeoChatTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +760,7 @@
 				03FD75461FB7A30D00FC3E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03FD75471FB7A30D00FC3E55 /* Build configuration list for PBXNativeTarget "GeoChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +769,7 @@
 				03FD75491FB7A30D00FC3E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

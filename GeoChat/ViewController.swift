@@ -8,19 +8,33 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
+import FontAwesome_swift
 
 class ViewController: UIViewController {
+    @IBOutlet weak var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func buttonPressed(_ sender:Any){
+        let image = String.fontAwesomeIcon(name: .envelopeO)
+        label.text = image
+//        self.view.backgroundColor = UIColor.red
+//        Alamofire.request("https://localhost:5000")
+//            .responseJSON{
+//                response in
+//                switch response.result{
+//                case .success(let value):
+//                    print(value)
+//                    break
+//                case .failure(let error):
+//                    break
+//                }
+//        }
     }
-
 
 }
 
