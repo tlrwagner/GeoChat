@@ -29,9 +29,12 @@ def query(query, isUpdate=False):
 
 #return returnResults
 
-#@app.route('/createEntry', methods=["POST", "GET"])
-#def createEntry():
-#	query("INSERT INTO entry (`entry_text`, `group_id`, `created_user`) VALUES ('" + request.form["test"] + "', 1, 1);", True)
+@app.route('/createEntry', methods=["POST", "GET"])
+def createEntry():
+	entry_text = request.form["entry_text"]
+	group_id = request.form["group_id"]
+	created_user = request.form["user_id"]
+	query("INSERT INTO entry (`entry_text`, `group_id`, `created_user`) VALUES \'" + entry_text + "\', " + group_id + ", " + created_user + ");", True)
 
 @app.route('/allentrys', methods=["POST", "GET"])
 def entries():
@@ -47,9 +50,9 @@ def groups():
 	returnResults = []
 	results = query("select * from group")
 	for result in results:
-		returnResults.append(("Chris", result[1]))
+		returnResults.append((result[0], result[1], result[2]))
 
-	return jsonify(results)
+	return jsonify({"results": returnResults})
 
 # get the feed for a particular user (only groups the user wants to see posts about)
 @app.route('/userentrys', methods=["POST", "GET"])
@@ -60,21 +63,26 @@ def feedByUser():
 		user_id = 1
 
 	returnResults = []
-	results = query("SELECT u.user_name, e.entry_text FROM entry e left join user u on (e.created_user = u.user_id) where group_id in (select group_id from user_group where user_id = " + str(user_id) + ");")
+	results = query("SELECT u.user_name, e.entry_text FROM entry e left join user u on (e.created_user = u.user_id) where e.group_id in (select group_id from user_group where user_id = " + str(user_id) + ");")
 	for result in results:
-		returnResults.append(("Chris", result[1]))
+		returnResults.append((result[0], result[1]))
 
-	return jsonify(results)
+	return jsonify({"results": returnResults})
 
 # get the feed for a particular group
 @app.route('/groupentrys', methods=["POST", "GET"])
 def feedByGroup():
-	returnResults = []
-	results = query("SELECT * FROM entry where group_id = 1;")
-	for result in results:
-		returnResults.append(("Chris", result[1]))
+	if (request.method == 'POST'):
+		group_id = request.form["group_id"]
+	else:
+		group_id = 1
 
-	return jsonify(results)
+	returnResults = []
+	results = query("SELECT u.user_name, e.entry_text FROM entry e left join user u on (e.created_user = u.user_id) where group_id = " + group_id + ";")
+	for result in results:
+		returnResults.append((result[0], result[1]))
+
+	return jsonify({"results": returnResults})
 
 @app.route('/test', methods=['POST'])
 def test():
